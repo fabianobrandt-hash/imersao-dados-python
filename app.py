@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
-import pycountry as pc
-
+import plotly as px
 
 # Configuração da página
 st.set_page_config(
@@ -164,4 +162,5 @@ with col_graf4:
 
 #Tabela de dados filtrados
 st.subheader("Tabela de Dados Filtrados")       
+
 st.dataframe(df_filtrado, use_container_width=True)
