@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import plotly.graph_objects as go
+import plotly as go
 
 # Configuração da página
 st.set_page_config(
@@ -207,3 +207,4 @@ if not df_filtrado.empty:
     st.dataframe(df_filtrado, use_container_width=True)
 else:
     st.write("Nenhum dado corresponde aos filtros selecionados.")
+
